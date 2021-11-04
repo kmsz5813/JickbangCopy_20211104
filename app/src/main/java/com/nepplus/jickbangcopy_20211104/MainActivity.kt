@@ -8,7 +8,10 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+//    방 데이터를 담아두기 위한 목록 변수
     val mRooms = ArrayList<RoomData>()
+
+//    RoomAdapter를 담기 위한 공강 => 채우는건 onCreate에서 나중에
     lateinit var mRoomAdapter : RoomAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
