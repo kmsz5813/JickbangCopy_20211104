@@ -33,4 +33,22 @@ class RoomData(
 
     }
 
+//    층수를 상황에 따라 가공해서 보여주는 함수.
+
+    fun getFormattedFloor() : String{
+
+        if (this.floor > 0) {
+            return "${this.floor}층"
+
+        }
+        else if (this.floor == 0){
+            return "반지하"
+        }
+        else {
+            return "지하${-this.floor}층"
+        }
+
+    }
+
+
 }
