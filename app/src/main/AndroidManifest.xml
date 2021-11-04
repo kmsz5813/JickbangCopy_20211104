@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_jickbang_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JickbangCopy_20211104">
-        <activity android:name=".ViewRoomDetailActivity"></activity>
+        <activity android:name=".ViewRoomDetailActivity">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
