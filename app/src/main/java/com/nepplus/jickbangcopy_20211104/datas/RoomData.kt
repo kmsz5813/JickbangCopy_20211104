@@ -13,12 +13,14 @@ class RoomData(
 
     fun getFormattedPrice() : String{
 
+//        if를 사용해서 화면에 비치는 금액이 천단위는 #,000로 나오게 설정
         if (this.price < 10000) {
 
             val priceStr = NumberFormat.getNumberInstance(Locale.KOREA).format(this.price)
             return priceStr
 
         }
+//        if밑에 else를 사용하여 억 단위에 억이라는 단어가 나올 수 있게 설정
         else{
 
             val uk = this.price / 10000

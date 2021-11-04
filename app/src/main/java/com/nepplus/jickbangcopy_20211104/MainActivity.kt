@@ -24,6 +24,14 @@ class MainActivity : AppCompatActivity() {
         mRoomAdapter = RoomAdapter(this, R.layout.room_list_item, mRooms)
         roomListView.adapter = mRoomAdapter
 
+        roomListView.setOnItemClickListener { parent, view, position, id ->
+
+            val clickedRoom = mRooms[position]
+
+
+
+        }
+
 
     }
 }

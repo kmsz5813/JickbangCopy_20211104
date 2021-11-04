@@ -18,6 +18,7 @@ class RoomAdapter(
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 
+
         var temRow = convertView
         if (temRow == null) {
             temRow = mInflater.inflate(R.layout.room_list_item, null)
